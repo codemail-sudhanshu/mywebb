@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mole</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flexc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main {
+            /* background-color: pink; */
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .cont {
+            background-color: white;
+            height: 100vh;
+            max-width: 1170px;
+            width: 95vw;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .text {
+            font-family: gobold;
+            font-size: 3rem;
+        }
+
+        .grid {
+            width: 50vh;
+            height: 50vh;
+            /* background-color: pink; */
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .square {
+            border: 1px solid black;
+        }
+
+        .mole {
+            background-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main flex">
+        <div class="cont flexc">
+            <div class="score text">
+                <span> Score : </span>
+                <span class="score"> 0</span>
+            </div>
+            <div class="time text">
+                <span> Time Left : </span>
+                <span class="time"> 60</span>s
+            </div>
+            <div class="grid">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+    </div>
+    <script src="mole.js"></script>
+</body>
+
+</html>
